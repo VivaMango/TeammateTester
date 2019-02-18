@@ -1,0 +1,23 @@
+{
+  "name": "teammatetester",
+  "version": "1.0.0",
+  "description": "Survey App using Node and Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VivaMango/TeammateTester.git"
+  },
+  "author": "VivaMango",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VivaMango/TeammateTester/issues"
+  },
+  "homepage": "https://github.com/VivaMango/TeammateTester#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
