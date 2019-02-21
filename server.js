@@ -10,11 +10,11 @@ app.use(express.json());
 app.use(express.static("app"))
 
 app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "/app/public/home.html"));
+    res.sendFile(path.join(__dirname, "/app/public/html/home.html"));
 });
 
 app.get("/survey", function(req, res) {
-    res.sendFile(path.join(__dirname, "/app/public/survey.html"));
+    res.sendFile(path.join(__dirname, "/app/public/html/survey.html"));
 });
 
 app.listen(PORT, function() {
