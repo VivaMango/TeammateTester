@@ -7,5 +7,6 @@ $("#surveySubmit").on("click" , function () {
         var answerVal = ($(this).val())
         answerArray.push(answerVal)
     })
+    console.log(answerArray)
 })
 

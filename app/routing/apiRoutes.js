@@ -1,4 +1,10 @@
 var express = require("express");
 var path = require("path");
 
-console.log("APIROUTES TEST")
+module.exports = function(app) {
+    var test = "test"
+}
+
+
+
+console.log("APIROUTES IS LINKED")
