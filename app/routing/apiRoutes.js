@@ -1,9 +1,15 @@
-var express = require("express");
-var path = require("path");
+var teammateData = require("../data/teammates.js")
 
 module.exports = function(app) {
-    var test = "test"
-}
+    app.post("/api/teammates" , function (req , res) {
+        console.log(req.body)
+        teammateData.push(req.body)
+    });
+    
+    app.get("/api/teammates" , function (req , res) {
+        res.json(teammateData)
+    })
+};
 
 
 
