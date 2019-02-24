@@ -55,7 +55,13 @@ $("#surveySubmit").on("click" , function () {
         console.log(`LOW IND ${lowestIndex}`)
         var matchMade = data[lowestIndex]
         console.log(`MM NAME ${matchMade.name}`)
-        window.alert(`YOUR MATCH IS ${matchMade.name}`)//placeholder for modal
+        var nameDisplay = matchMade.name
+        var imgDisplay = $("<img>")
+        imgDisplay.attr("src" , matchMade.photoLink)
+        imgDisplay.addClass("img-fluid")
+        $("#modalBody").append(imgDisplay)
+        $("#modalText").html(`YOUR MATCH IS ${nameDisplay}`)
+        $("#matchModal").modal("show")
     });
 })
 
