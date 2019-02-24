@@ -1,0 +1,22 @@
+#homeJumbo {
+    background-color: #F404E8;
+    color: #100098;
+    height: 100vh;
+    font-family: 'Chewy', cursive;
+}
+
+body {
+    overflow: hidden;
+}
+
+#surveyBody {
+    background-color: #F404E8;
+    overflow: auto;
+    font-family: 'Chewy', cursive;
+    color: #100098;
+}
+
+#modalDialog {
+    background-color: #100098;
+    color: #F404E8;
+}

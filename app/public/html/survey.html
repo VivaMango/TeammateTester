@@ -3,19 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TeammateTester Survey</title>
+    <title>DriftDaddy Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" type="text/css" href="public/css/reset.css">
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    
+    <!-- Our CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+
 </head>
-<body>
+<body id="surveyBody">
     <div class=container>
         <div class=row>
             <!-- Container to hold our survey form -->
             <div id=infoDisplay class=col-lg-12>
-                <h1>TeammateTest Questions!</h1>
+                <h1>Help us find your perfect Drift Daddy</h1>
+                <h5>Fill out the survey below with the answers that best match your personality so we can build your Driving Disposition(TM) profile.</h5>
                 <form>
                     <div class="form-group row">
                         <label for="nameInput" class="col-sm-2 col-form-label">Name:</label>
@@ -31,140 +44,160 @@
                     </div>
                     <!-- DROPDOWN BLOCK #1 -->
                     <hr class="my-4">
-                    <p>Test Question</p>
+                    <p>The car in front of you is moving at a snail's pace. What do you do?</p>
                     <div class="input-group mb-3">
                         <select class="custom-select" id="inputGroupSelect01">
-                            <option selected>Select 1-5:</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
+                            <option selected>Select your answer:</option>
+                            <option value="1">I would stay behind them until I find a safe moment to overtake their car</option>
+                            <option value="2">Hmm...maybe the other driver is feeling intimidated about driving faster or moving into another lane. I'd simply go around them.</option>
+                            <option value="3">I'd probably take a deep breath, turn the volume up, and overtake them once I had a chance</option>
+                            <option value="4">I would overtake the car as quickly as possible, nobody holds me up!</option>
+                            <option value="5">I would overtake them and indicate to them that they need to move into a slower lane</option>
+                            <option value="6">My hand would be on the horn in a second - I hope the noise drives them crazy 'til they get out of the way!</option>
+                            <option value="7">Why do they even let these idiot drivers on the road? I'd likely honk as I overtook them</option>
                         </select>
                     </div>
                     <!-- DROPDOWN BLOCK #2 -->
                     <hr class="my-4">
-                    <p>Test Question</p>
+                    <p>You see a car zooming up behind you, winding its way through traffic. How do you react?</p>
                     <div class="input-group mb-3">
                         <select class="custom-select" id="inputGroupSelect02">
-                          <option selected>Select 1-5:</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option selected>Select your answer:</option>
+                          <option value="1">I'll go out of my way to block them off, and I'll keep doing it until they learn their lesson. Who do they think they are?</option>
+                          <option value="2">Ugh. Another person who thinks rules don't apply to them. I have no patience for these people!</option>
+                          <option value="3">I would signal to them as they were driving by that their behavior is unacceptable</option>
+                          <option value="4">Just let them try</option>
+                          <option value="5">I get out of the way as fast as possible. The last thing I need is some crazy driver ramming into my car!</option>
+                          <option value="6">Clearly they are in a bigger rush than I am. I'd move out of the way and let them pass. So be it.</option>
+                          <option value="7">What car? I didn't even notice it coming, I was listening to this awesome new song!</option>
                         </select>
                     </div>
                     <!-- DROPDOWN BLOCK #3 -->
                     <hr class="my-4">
-                    <p>Test Question</p>
+                    <p>Someone cuts in front of you without any signal or warning. How do you react?</p>
                     <div class="input-group mb-3">
                         <select class="custom-select" id="inputGroupSelect03">
-                          <option selected>Select 1-5:</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option selected>Select your answer:</option>
+                          <option value="1">Oh it's on! I will chase them down, and I'll let them know exactly what I think!</option>
+                          <option value="2">They probably didn't even see me there, or realize how dangerous that was. Thankfully no one got hurt.</option>
+                          <option value="3">Once they pass me, I would get their attention somehow and indicate this isn't acceptable behavior</option>
+                          <option value="4">I'm on the phone anyway, it's a nice distraction</option>
+                          <option value="5">Think you can cut in front of me like that? I'll get right back around you, watch me!</option>
+                          <option value="6">Take down his license plate and call the police</option>
+                          <option value="7">I'm just glad they didn't hit me. I'll keep an eye on that car and avoid it.</option>
                         </select>
                     </div>
                     <!-- DROPDOWN BLOCK #4 -->
                     <hr class="my-4">
-                    <p>Test Question</p>
+                    <p>Driving on the highway, a driver is hogging the right lane and not moving, how do you react?</p>
                     <div class="input-group mb-3">
                         <select class="custom-select" id="inputGroupSelect04">
-                          <option selected>Select 1-5:</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option selected>Select your answer:</option>
+                          <option value="1">The driver likely doesn't know they can't stay in the passing lane. I'd just continue on my way.</option>
+                          <option value="2">I would drive in front of them and indicate to them to move into the other lane</option>
+                          <option value="3">I flash my high-beams, since I need to overtake them quickly</option>
+                          <option value="4">I'm on the phone anyway - it doesn't bother me.</option>
+                          <option value="5">I'd get right behind them and honk at them until they get the idea.</option>
+                          <option value="6">I turn the music up and enjoy the drive</option>
+                          <option value="7">He's breaking the law, I'll call 911</option>
                         </select>
                     </div>
                     <!-- DROPDOWN BLOCK #5 -->
                     <hr class="my-4">
-                    <p>Test Question</p>
+                    <p>A car speeds up behind you and flashes their lights to get you to move. How do you react?</p>
                     <div class="input-group mb-3">
                         <select class="custom-select" id="inputGroupSelect05">
-                          <option selected>Select 1-5:</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option selected>Select your answer:</option>
+                          <option value="1">I don't care, I'm finishing a text.</option>
+                          <option value="2">I let them pass and get on with my day</option>
+                          <option value="3">I slow down just to mess with them.</option>
+                          <option value="4">I'll speed up, I'm not letting them overtake me</option>
+                          <option value="5">They must have a good reason to be in a rush, I'm not driving slowly</option>
+                          <option value="6">I would get out of the way immediately, I dont want to cause an accident</option>
+                          <option value="7">If I'm in the right mood, I'll follow them and threaten them</option>
                         </select>
                     </div>
                     <!-- DROPDOWN BLOCK #6 -->
                     <hr class="my-4">
-                    <p>Test Question</p>
+                    <p>What do you usually do when you are stuck in traffic?</p>
                     <div class="input-group mb-3">
                         <select class="custom-select" id="inputGroupSelect06">
-                          <option selected>Select 1-5:</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option selected>Select your answer:</option>
+                          <option value="1">Groan at how nobody knows how to drive through a gridlock</option>
+                          <option value="2">Make it my mission to always be in the fastest moving lane and get out of there</option>
+                          <option value="3">Correct other drivers under my breath</option>
+                          <option value="4">Crank up the tunes and enjoy the ride!</option>
+                          <option value="5">Stay focused and move with traffic</option>
+                          <option value="6">Snapchat myself getting out of the car and walking next to it</option>
+                          <option value="7">Drive on the shoulder, I have places to be</option>
                         </select>
                     </div>
                     <!-- DROPDOWN BLOCK #7 -->
                     <hr class="my-4">
-                    <p>Test Question</p>
+                    <p>Do you always obey traffic signals?</p>
                     <div class="input-group mb-3">
                         <select class="custom-select" id="inputGroupSelect07">
-                          <option selected>Select 1-5:</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option selected>Select your answer:</option>
+                          <option value="1">Of course, I don't need to break the law</option>
+                          <option value="2">I don't want to get into an accident!</option>
+                          <option value="3">Red lights are just a chance to change the song!</option>
+                          <option value="4">What traffic signals? Is there an app for that?</option>
+                          <option value="5">I might run a stop sign late at night if I'm in a hurry</option>
+                          <option value="6">I don't have time to obey EVERY traffic signal</option>
+                          <option value="7">I drive where I want, when I want</option>
                         </select>
                     </div>
                     <!-- DROPDOWN BLOCK #8 -->
                     <hr class="my-4">
-                    <p>Test Question</p>
+                    <p>What's your opinion on sharing the road with cyclists</p>
                     <div class="input-group mb-3">
                         <select class="custom-select" id="inputGroupSelect08">
-                          <option selected>Select 1-5:</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option selected>Select your answer:</option>
+                          <option value="1">We both have places to be! Ok with me!</option>
+                          <option value="2">I like to roll my windows down so they can hear my tunes</option>
+                          <option value="3">As long as they stay in their lane.</option>
+                          <option value="4">Bikers? What biker? I'm taking selfies.</option>
+                          <option value="5">They belong on the sidewalk, I don't have time to go around them</option>
+                          <option value="6">I'll roll down the window and yell at them</option>
+                          <option value="7">I'll yell at them AND give them the finger</option>
                         </select>
                     </div>
                     <!-- DROPDOWN BLOCK #9 -->
                     <hr class="my-4">
-                    <p>Test Question</p>
+                    <p>What's your dream car?</p>
                     <div class="input-group mb-3">
                         <select class="custom-select" id="inputGroupSelect09">
-                          <option selected>Select 1-5:</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option selected>Select your answer:</option>
+                          <option value="1">Toyota Prius</option>
+                          <option value="2">Volkswagen Golf R32</option>
+                          <option value="3">2000 Nissan Silvia S15</option>
+                          <option value="4">1967 Ford Mustang</option>
+                          <option value="5">Mitsubishi Lancer Evo IX</option>
+                          <option value="6">2006 Mazda RX-7 Veilside</option>
+                          <option value="7">2006 Nissan 350Z</option>
                         </select>
                     </div>
                     <!-- DROPDOWN BLOCK #10 -->
                     <hr class="my-4">
-                    <p>Test Question</p>
+                    <p>How much do you like the movie Tokyo Drift?</p>
                     <div class="input-group mb-3">
                         <select class="custom-select" id="inputGroupSelect10">
-                          <option selected>Select 1-5:</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option selected>Select your answer:</option>
+                          <option value="1">It's racist. I don't like it.</option>
+                          <option value="2">I'm racist. I don't like it.</option>
+                          <option value="3">I haven't seen it, I don't watch movies.</option>
+                          <option value="4">It's the best movie in the Fast and Furious franchise.</option>
+                          <option value="5">It's the best car movie of the modern era.</option>
+                          <option value="6">It's the best movie of the modern era.</option>
+                          <option value="7">It's a true cinematic masterpiece, the perfect blend of American culture and the classic epic hero's tale!</option>
                         </select>
                     </div>
                     <!-- SUBMIT BUTTON -->
                     <hr class="my-4">
                     <div class="form-group row">
                         <div class="col-sm-10">
-                            <button id="surveySubmit" type="submit" class="btn btn-primary">Find my Team!</button>
-                            <a id="homeLink" class="btn btn-danger" href="/" role="button">Go Home</a>
+                            <button id="surveySubmit" type="submit" class="btn btn-light">Find my Drift Daddy!<i class="fas fa-kiss-wink-heart"></i></button>
+                            <a id="homeLink" class="btn btn-secondary" href="/" role="button">Go Home<i class="fas fa-car-crash"></i></a>
                         </div>
                     </div>
                 </form>
@@ -172,20 +205,21 @@
         </div>
     </div>
 
+    <!-- SURVEY RESULT MODAL -->
     <div class="modal" id="matchModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
+          <div id="modalDialog" class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Your best match from our database:</h5>
+              <h5 class="modal-title">Your perfect Drift Daddy is:</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body" id="modalBody">
-              <p id="modalText"></p>
+              <h3 id="modalText"></h3>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close<i class="fas fa-car-crash"></i></button>
             </div>
           </div>
         </div>

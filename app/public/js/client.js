@@ -28,40 +28,37 @@ $("#surveySubmit").on("click" , function () {
         data: currentUser
       }).then(function(data){
         console.log(`NEW TEAMMATE: ${currentUser.name} ADDED`)
-        console.log(`DATA TEST: ${data[0].name}`)
         var matchArrOuter = []
         var matchSumArr = []
         data.forEach(function(element) {
             var matchArrRes = currentCompare(currentUser , element)
             if (matchArrRes === undefined) {
-                console.log("dupe thrown out")
+                console.log("self thrown out")
             } else {
                 matchArrOuter.push(matchArrRes)
             }
         })
-        console.log(matchArrOuter)
         matchArrOuter.forEach(function(element) {
             var matchSum = 0
             element.forEach(function(elementEl) {
                matchSum += elementEl
             })
-            console.log(`matchSum Test ${matchSum}`)
             matchSumArr.push(matchSum);
         })
-        console.log(`MATCHSUMARR ${matchSumArr}`)
         var lowestVal = Math.min(...matchSumArr)
-        console.log(`LOWEST VAL ${lowestVal}`)
         var lowestIndex = matchSumArr.indexOf(lowestVal)
-        console.log(`LOW IND ${lowestIndex}`)
         var matchMade = data[lowestIndex]
-        console.log(`MM NAME ${matchMade.name}`)
         var nameDisplay = matchMade.name
         var imgDisplay = $("<img>")
         imgDisplay.attr("src" , matchMade.photoLink)
         imgDisplay.addClass("img-fluid")
         $("#modalBody").append(imgDisplay)
-        $("#modalText").html(`YOUR MATCH IS ${nameDisplay}`)
+        $("#modalText").html(`${nameDisplay}`)
         $("#matchModal").modal("show")
+        // Reloads the page when the modal is closed
+        $('#matchModal').on('hidden.bs.modal', function () {
+            location.reload();
+           })
     });
 })
 
@@ -79,7 +76,7 @@ function Teammate (name , photoLink , ansArray) {
 function currentCompare(user , teammate) {
     var matchArr = []
     if (user.name === teammate.name) {
-        console.log("handle dupe here")
+        console.log("handle self here")
     } else {
         userArr = user.ansArray
         teamArr = teammate.ansArray
